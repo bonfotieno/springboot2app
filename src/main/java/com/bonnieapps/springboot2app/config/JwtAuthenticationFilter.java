@@ -2,9 +2,7 @@ package com.bonnieapps.springboot2app.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.lang.NonNull;
-import org.springframework.security.authentication.CachingUserDetailsService;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
