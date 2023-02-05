@@ -1,15 +1,12 @@
 package com.bonnieapps.springboot2app.student;
 
-import org.hibernate.service.Service;
-import org.springframework.stereotype.Controller;
+
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDate;
-import java.time.Month;
 import java.util.List;
 
-@Controller
-@RequestMapping("api/student/")
+@RestController
+@RequestMapping("/api/v1/student/")
 public class StudentController {
 
     private final StudentService studentService;
