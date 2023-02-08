@@ -46,7 +46,7 @@ public class AuthenticationService {
         );
         var user = userRepository.findByEmail(request.getEmail())
                 .orElseThrow(
-                        //make sure to capture the correct exception and throw
+                        //make sure to capture the correct exception and throw to the client
                         );
         System.out.println(user.getFirstname());
         var jwtToken = jwtService.generateToken(user);
