@@ -79,7 +79,7 @@ public class JwtService {
                 .setClaims(extraClaims)
                 .setSubject(userDetails.getUsername())
                 .setIssuedAt(new Date(System.currentTimeMillis()))  // helps to check the expiration date
-                .setExpiration(new Date(System.currentTimeMillis() + 10000*60*24))
+                .setExpiration(new Date(System.currentTimeMillis() + 1000*60*24)) // token expires after one day
                 .signWith(getSignInKey(), SignatureAlgorithm.HS256)
                 .compact();  // the method compact generates and returns the token
 
